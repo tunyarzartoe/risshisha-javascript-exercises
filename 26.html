@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>課題26</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #img-area {
+      width: 230px;
+      margin: 10px;
+    }
+    #avatar {
+      position: relative;
+      width: 140px;
+      height: 160px;
+      margin: 20px auto;
+    }
+    #avatar img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: solid 1px black;
+    }
+    #clothes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+    #clothes img {
+      width: 70px;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="img-area">
+    <div id="avatar">
+      <img src="images/human.png" id="human">
+      <!-- ここに着せたい服の画像を配置する -->
+    </div>
+    <ul id="clothes">
+      <li><img src="images/plain.png"></li>
+      <li><img src="images/star.png"></li>
+      <li><img src="images/heart.png"></li>
+    </ul>
+  </div>
+  <script src="main26.js"></script>
+</body>
+
+</html>

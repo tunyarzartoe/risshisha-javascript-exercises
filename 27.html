@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>課題27</title>
+  <style>
+    #tab-area {
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      z-index: 2;
+    }
+    .tab {
+      width: 80px;
+      height: 30px;
+      padding-left: 10px;
+      border: solid 1px black;
+      border-radius: 5px 5px 0 0;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    #content-area {
+      width: 400px;
+      height: 100px;
+      padding: 20px;
+      margin-top: 1px;
+      border: solid 1px black;
+      z-index: 1;
+    }
+    .active {
+      border-bottom: solid 1px white;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tab-area">
+    <div id="top" class="tab active">Top</div>
+    <div id="about" class="tab">About</div>
+    <div id="access" class="tab">Access</div>
+  </div>
+  <div id="content-area">
+    <div id="content-top" class="content">Topタブの内容を表示</div>
+    <div id="content-about" class="content hidden">Aboutタブの内容を表示</div>
+    <div id="content-access" class="content hidden">Accessタブの内容を表示</div>
+  </div>
+  <script src="main27.js"></script>
+</body>
+
+</html>
